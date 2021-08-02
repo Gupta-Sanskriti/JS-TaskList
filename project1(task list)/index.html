@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Task list</title>
+</head>
+<body>
+    <div class="container">
+        <div id="card">
+            <div class="card-head">
+                <h1 class="task-title">Task List</h1>
+                <form class="task-form">
+                    <label for="text" id="text-label">New Task</label>
+                    <input type="text" id="task-area" class="tasks-input">
+                    <input type="button" value="Add Task" id="add-task" class="btn btn-primary">
+                </form>
+            </div>
+            <div class="card-body">
+                <h1 class="tasks">Tasks</h1>
+                <!-- collection list -->
+                <ul class="collection-list">
+                    <li class="task-list">
+                        <p class="list-item">List Item</p>
+                        <a href="#" class='delete-items'>
+                            X
+                        </a>
+                    </li>
+                    <li class="task-list">
+                        <p class="list-item">List Item</p>
+                        <a href="#" class='delete-items'>
+                            X
+                        </a>
+                    </li>
+                    <li class="task-list">
+                        <p class="list-item">List Item</p>
+                        <a href="#" class='delete-items'>
+                            X
+                        </a>
+                    </li>
+                    <li class="task-list">
+                        <p class="list-item">List Item</p>
+                        <a href="#" class='delete-items'>
+                            X
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-dark" id="clear-btn">Clear All</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://use.fontawesome.com/652bdb7170.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

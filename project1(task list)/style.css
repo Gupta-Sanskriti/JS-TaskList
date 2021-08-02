@@ -1,0 +1,124 @@
+:root{
+    --primary-color:#103e61;
+    --primary-hover-color:#081e30;
+    --dark-color:#000;
+    --delete-hover:coral;
+    --background-color:#ccc;
+    --list-color:#3684b5e0;
+
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    background-color: var(--background-color);
+    color:#333;
+}
+
+/* utilities */
+
+.container{
+    width:50vw;
+    margin:auto;
+}
+
+.btn{
+    padding:0.4rem 1rem;
+    width:10vw;
+    cursor: pointer;
+    text-align: center;
+    border-radius:2rem;
+}
+
+.btn-primary{
+    background-color:var(--primary-color);
+    color:#fff;
+    font-size: large;
+    letter-spacing: 0.1rem;
+}
+.btn-primary:hover{
+    background-color: var(--primary-hover-color);
+}
+
+.btn-dark{
+    background-color:var(--primary-color);
+    color:#fff;
+    font-size: large;
+    letter-spacing: 0.1rem;   
+}
+.btn-dark:hover{
+    background-color: var(--dark-color);
+}
+
+i{
+    color:var(--delete-hover);
+}
+li{
+    list-style: none;
+}
+
+input{
+    border:none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color:var(--delete-hover)
+}
+
+
+/* main-styling */
+
+#card{
+    background:#fff;
+    padding:2rem;
+    margin:2rem;
+    border-radius: 20px;
+}
+#card .card-head{
+    border-bottom:1px solid #ccc;
+    padding-bottom:1.6rem;
+    
+}
+
+#card .card-head .task-form{
+    display: flex;
+    flex-direction:column;
+}
+
+#card .card-head .task-form .tasks-input{
+    border-bottom:1px solid #333;
+    margin :1rem 0;
+    padding:1rem;
+    font-size: large;
+}
+
+#card .card-body{
+    display: flex;
+    flex-direction: column;
+    padding:1rem 0;
+}
+
+#card .card-body .collection-list{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+#card .card-body .collection-list .task-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0.4rem 1rem;
+    border-radius: 3rem;
+    background-color: var(--list-color);
+    color:#fff;
+    margin:0.5rem 0;
+
+}
